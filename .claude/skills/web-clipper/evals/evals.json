@@ -1,0 +1,23 @@
+{
+  "skill_name": "web-clipper",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "把这篇文章保存到我的本地 clipping 目录：https://letters.thedankoe.com/p/how-to-articulate-yourself-intelligently，保留标题、原链接、日期和正文。",
+      "expected_output": "生成 1 个 Markdown 文件，带 frontmatter，文件名包含日期和标题。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "把这个 archive 页里最热门的前 20 篇文章都拉到本地，放到同一个目录下面：https://letters.thedankoe.com/archive?sort=top。",
+      "expected_output": "批量保存 20 篇文章；若静态页面拿不全链接，应改用 browser 收集 URL 再交给脚本落地。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我给你一个页面和一个指定数量，你帮我按要求收藏。默认保存在 00_收件箱/Clippings/ 下面，如果索引页是懒加载，优先想办法保证成功率。",
+      "expected_output": "技能应先澄清 URL、数量和保存目录；执行路径以成功率优先，而不是只走一种抓取方式。",
+      "files": []
+    }
+  ]
+}

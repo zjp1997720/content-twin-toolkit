@@ -1,0 +1,23 @@
+{
+  "skill_name": "content-goldmine-gemini",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "把这篇 clipping 拆成素材碎片，并沉淀到素材库：00_收件箱/Clippings/Dan Koe/2025-07-20 The Greatest Thought Partner Prompt Ever.md",
+      "expected_output": "生成标题、开头、金句、结构等 pass 碎片文件；英文内容保留原文并补中文转写；格式贴近现有素材库模板",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "批量处理 00_收件箱/Clippings/Dan Koe/ 下面最近 3 篇文章，拆成可复用素材并写进素材库",
+      "expected_output": "按目录批量处理多篇 Markdown，逐篇调用 Gemini，写出多类碎片文件，并跳过 fail 项",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "把这篇英文文章拆成中文素材资产，不要只做摘要，要给我可复用的标题、金句和结构公式",
+      "expected_output": "输出中文可复用资产，而不是普通总结；金句和结构公式具备明确复用价值",
+      "files": []
+    }
+  ]
+}
