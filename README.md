@@ -17,6 +17,17 @@
 
 ---
 
+## 30 秒看懂
+
+如果你现在很赶，只看这 4 句就够了：
+
+1. 这个仓库不是写作教程，而是一个可安装的写作 skill
+2. 它默认能写强文章，也能按 6 个内置作者方向写
+3. 你安装时只需要放对两块内容：`skill` + `统一素材库`
+4. 如果你懒得手动装，直接把仓库链接和 `AGENT_INSTALL_PROMPT.md` 丢给 Agent
+
+---
+
 ## 它适合谁
 
 - 想先写出强文章，但自己还没有完整个人风格资产的人
@@ -30,6 +41,23 @@
 - 你要的是长期个人 clone 系统，而不是 starter
 
 如果你属于后者，更接近的方向通常是 `writing-clone-profile`，不是这个仓库。
+
+---
+
+## 你拿到这个仓库后，应该怎么理解它
+
+不要把它想成一个“大而全的写作系统”。
+
+更准确的理解是：
+
+- **它是一个 starter**，不是你的最终个人 clone
+- **它的优势是起步快**，不是人格资产最深
+- **它已经把外部依赖收口好了**，你不需要再到别的目录找材料
+
+你只需要记住两件事：
+
+- `.claude/skills/writing-clone-starter/` 负责“怎么写”
+- `02_素材库/writing-clone-starter-material-library/` 负责“拿什么写”
 
 ---
 
@@ -118,6 +146,10 @@
 - `.claude/skills/writing-clone-starter/` 是大脑
 - `02_素材库/writing-clone-starter-material-library/` 是它会真正读取的材料层
 
+如果你是第一次接触这类仓库，不要被 `.claude/` 和 `02_素材库/` 这两个目录名吓到。
+
+你真正需要安装和保留的，也就这两块。
+
 ---
 
 ## 你安装完以后，Agent 实际会读什么
@@ -155,6 +187,16 @@
 
 你当然可以改路径，但那会引入额外适配工作。这个仓库默认已经把路径收口好了，直接照着放，摩擦最低。
 
+### 兼容场景
+
+这份 README 默认按下面场景来写：
+
+- 你在用 Claude Code
+- 或者你在用一个能读文件、复制目录、执行基础 git 操作的兼容 Agent
+- 你的工作区允许保留 `.claude/` 和 `02_素材库/` 这两个目录
+
+如果你根本不用这类 Agent 工作流，这个仓库对你的价值会明显下降。
+
 ---
 
 ## 安装方式 A：自己手动安装
@@ -166,6 +208,8 @@
 ```bash
 git clone https://github.com/zjp1997720/writing-clone-starter.git
 ```
+
+如果你不想用 git，也可以在 GitHub 页面直接下载 ZIP，然后手动解压。
 
 ### 第 2 步：把两块内容复制到你的工作区
 
@@ -201,6 +245,18 @@ git clone https://github.com/zjp1997720/writing-clone-starter.git
 
 只要这两块在，仓库结构就对了。
 
+### 第 5 步：做一次真正的试用
+
+安装完成后，别停在“目录存在”。
+
+直接给你的 Agent 一句最小测试话术：
+
+```text
+帮我写一篇关于 AI 内容获客的文章
+```
+
+如果它能正确进入强文章模式，并开始围绕正文组织内容，说明 starter 已经真正接上了。
+
 ---
 
 ## 安装方式 B：把仓库链接直接丢给你的 Agent
@@ -210,6 +266,10 @@ git clone https://github.com/zjp1997720/writing-clone-starter.git
 很多用户不是自己手动 copy，而是会把 GitHub 链接直接发给 Agent，让 Agent 帮自己装。这个仓库就是按这种场景写的。
 
 你可以直接把下面这段 prompt 复制给你的 Agent：
+
+如果你不想从 README 里复制长 prompt，也可以直接让 Agent 读取仓库根目录下这个文件：
+
+- `AGENT_INSTALL_PROMPT.md`
 
 ```text
 请帮我把这个仓库安装到我当前工作区：
@@ -233,6 +293,14 @@ https://github.com/zjp1997720/writing-clone-starter
 ```
 
 如果你的 Agent 足够靠谱，这段 prompt 已经足够把仓库装好。
+
+如果你的 Agent 比较笨，我建议你直接把：
+
+1. 仓库链接
+2. 这份 README
+3. `AGENT_INSTALL_PROMPT.md`
+
+三样一起丢给它。
 
 ---
 
@@ -275,6 +343,17 @@ https://github.com/zjp1997720/writing-clone-starter
 它不会硬装像。
 
 它会提醒你这个题已经超出该作者的原生带宽，然后自动回到强文章模式。
+
+### 你第一次使用时，推荐这样试
+
+建议你按这个顺序试，不容易误判：
+
+1. **先试强文章模式**
+   - 例：`帮我写一篇关于 AI 内容获客的文章`
+2. **再试高拟态模式**
+   - 例：`像 Dan Koe 那样写一篇关于一人公司内容策略的文章`
+3. **最后再试边界题**
+   - 看它会不会自动降级，而不是硬装像
 
 ---
 
@@ -325,6 +404,57 @@ https://github.com/zjp1997720/writing-clone-starter
 
 ---
 
+## 常见安装错误
+
+如果你装完以后觉得“不像装好了”，通常是下面几种原因：
+
+### 1. 只复制了 skill，没有复制素材库
+
+结果就是：
+
+- 规则在
+- 外部材料不在
+- 高拟态相关内容会明显变弱
+
+### 2. 自作主张改了目录名
+
+比如把：
+
+- `.claude/skills/writing-clone-starter/`
+- `02_素材库/writing-clone-starter-material-library/`
+
+改成了别的名字。
+
+这会直接增加路径适配成本。
+
+### 3. 仓库放对了，但没有真的试跑一句话
+
+“目录在”不等于“已经会用”。
+
+最小验证永远不是看文件树，而是让 Agent 真写一句。
+
+### 4. 把维护者模块当成普通用户入口
+
+普通用户先用主入口，不要一上来就钻 `profile-distillation/` 或 `profile-probe/`。
+
+那两块是维护工具，不是新手入口。
+
+---
+
+## 更新这个仓库时怎么做
+
+如果后面这个仓库有新版本，你的更新方式也很简单：
+
+1. 拉取仓库最新版本
+2. 用新版覆盖这两块：
+   - `.claude/skills/writing-clone-starter/`
+   - `02_素材库/writing-clone-starter-material-library/`
+3. 再跑一次最小验证
+
+如果你是让 Agent 帮你更新，最稳的方式也是复用 `AGENT_INSTALL_PROMPT.md`，只是在 prompt 里把“安装”改成“更新”。
+
+---
+
 ## 最后你该先看哪 3 个文件
 
 如果你刚拿到仓库，只看这 3 个文件就够了：
@@ -339,6 +469,10 @@ https://github.com/zjp1997720/writing-clone-starter
 - 它怎么工作
 - 它从哪儿取料
 - 你该怎么开始用
+
+如果你准备把仓库直接丢给 Agent，再加看第 4 个文件：
+
+4. `/AGENT_INSTALL_PROMPT.md`
 
 ---
 
