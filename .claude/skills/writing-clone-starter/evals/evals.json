@@ -1,0 +1,129 @@
+{
+  "skill_name": "writing-clone-starter",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我没有什么个人经历沉淀，也没有现成的风格资产。现在我想写一篇关于‘为什么普通人应该尽快把 AI 用进自己的工作流’的公众号文章，目标是先写出一篇强而完整、能发的文章。",
+      "expected_output": "默认进入强文章模式，产出一篇结构完整、主张明确、对新手友好的强稿，而不是要求用户先提供个人 profile。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "按 Dan Koe 的方向帮我写一篇文章，主题是‘为什么个人品牌不该只是发内容，而应该变成一个一人公司系统’。我想要的是高拟态，不是普通强稿。",
+      "expected_output": "进入 Dan Koe 高拟态模式，优先调用 Dan Koe 试点 profile 的 worldview、recurring moves、snippet bank 和 topic bandwidth，而不是退回 personal clone 逻辑。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "还是按 Dan Koe 风格来写，但这次主题是‘中国制造业企业怎么做地方招商政策解读和税务筹划’。",
+      "expected_output": "识别该主题超出 Dan Koe 原生议题带宽，明确提醒并自动降级到强文章模式，不继续输出伪拟态稿。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "按粥左罗的方向帮我写一篇文章，主题是‘为什么普通人应该尽快把写作做成自己的第二收入曲线’。我想要的是高拟态，不是普通强稿。",
+      "expected_output": "进入粥左罗高拟态模式，优先调用粥左罗 profile 的 worldview、recurring moves、snippet bank 和 topic bandwidth，而不是退回 generic 中文强稿逻辑。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "还是按粥左罗风格来写，但这次主题是‘中国半导体先进封装供应链的成本结构优化与政策补贴博弈’。",
+      "expected_output": "识别该主题超出粥左罗原生议题带宽，明确提醒并自动降级到强文章模式，不继续输出伪拟态稿。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "按粥左罗的方向写一篇文章，主题是‘为什么很多人学了写作方法，还是迟迟赚不到第一笔稿费或咨询费’。我希望正文里能明显看出粥左罗那种‘普通人处境 + 现实判断 + 内容变现路径’的感觉。",
+      "expected_output": "命中粥左罗核心带宽，正文应出现入口翻译、故事/案例到观点的推进、现实收益落点，而不是只停在泛写作建议。",
+      "files": [
+        "references/built-in-profiles/zhouzuoluo/profile-card.md",
+        "references/built-in-profiles/zhouzuoluo/worldview.md",
+        "references/built-in-profiles/zhouzuoluo/recurring-moves.md",
+        "references/built-in-profiles/zhouzuoluo/hard-signals.md",
+        "references/built-in-profiles/zhouzuoluo/acceptance-checklist.md"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "请分别给出：A）一篇普通中文强稿风格的文章开头；B）一篇按粥左罗方向写的文章开头。主题相同：‘为什么普通人做内容，不能只追流量，而要尽快建立自己的信任漏斗’。不要解释区别，只输出两个开头。",
+      "expected_output": "A 与 B 都应成立，但 B 的差异应该主要落在正文层：更强的入口翻译、更明显的普通人判断、更自然的内容到信任再到产品意识，而不是只多几个爆款标题信号词。",
+      "files": [
+        "references/built-in-profiles/zhouzuoluo/contrastive-pairs.md",
+        "references/built-in-profiles/zhouzuoluo/false-positive-signals.md",
+        "references/built-in-profiles/zhouzuoluo/acceptance-checklist.md"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "按 Justin Welsh 的方向帮我写一篇文章，主题是‘为什么一人公司不能只发内容，而要尽快把内容接到邮件列表和产品漏斗上’。我想要的是高拟态，不是普通英文强稿。",
+      "expected_output": "进入 Justin Welsh 高拟态模式，正文应明显体现第一人称数字/痛点锚点、公式化推进、owned-audience 意识和极简行动指令，而不是退回 Dan Koe 式哲学抽象或 generic business coach 逻辑。",
+      "files": [
+        "references/built-in-profiles/justinwelsh/profile-card.md",
+        "references/built-in-profiles/justinwelsh/worldview.md",
+        "references/built-in-profiles/justinwelsh/recurring-moves.md",
+        "references/built-in-profiles/justinwelsh/hard-signals.md",
+        "references/built-in-profiles/justinwelsh/acceptance-checklist.md"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "还是按 Justin Welsh 风格来写，但这次主题是‘中国制造业供应链企业如何做出口退税合规筹划和跨境法务结构设计’。",
+      "expected_output": "识别该主题超出 Justin Welsh 原生议题带宽，明确提醒并自动降级到强文章模式，不继续输出伪拟态稿。",
+      "files": ["references/built-in-profiles/justinwelsh/topic-bandwidth.md"]
+    },
+    {
+      "id": 10,
+      "prompt": "按刘润的方向帮我写一篇文章，主题是‘为什么很多小老板觉得生意越来越难做，但问题可能不是市场坏了，而是交易结构和认知都老了’。我想要的是高拟态，不是普通商业分析稿。",
+      "expected_output": "进入刘润高拟态模式，正文应体现共情后快速重构、数据击穿直觉、交易结构诊断和判断+步骤式收束，而不是 generic 商业顾问标准课。",
+      "files": [
+        "references/built-in-profiles/liurun/profile-card.md",
+        "references/built-in-profiles/liurun/worldview.md",
+        "references/built-in-profiles/liurun/recurring-moves.md",
+        "references/built-in-profiles/liurun/hard-signals.md",
+        "references/built-in-profiles/liurun/acceptance-checklist.md"
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "还是按刘润风格来写，但这次主题是‘普通人如何通过日更写作建立个人影响力并赚到第一笔副业收入’。",
+      "expected_output": "识别该主题超出刘润原生议题带宽，明确提醒并自动降级到强文章模式，不继续输出伪拟态稿。",
+      "files": ["references/built-in-profiles/liurun/topic-bandwidth.md"]
+    },
+    {
+      "id": 12,
+      "prompt": "按梁宁的方向帮我写一篇文章，主题是‘为什么很多 AI 产品看起来很聪明，却迟迟留不住用户’。我想要的是高拟态，不是普通产品方法论文章。",
+      "expected_output": "进入梁宁高拟态模式，正文应体现恐惧/欲望还原、框架自然调用、生物学或生态位隐喻贯穿，以及带有人性回响的收束，而不是标准商业方法论课。",
+      "files": [
+        "references/built-in-profiles/liangning/profile-card.md",
+        "references/built-in-profiles/liangning/worldview.md",
+        "references/built-in-profiles/liangning/recurring-moves.md",
+        "references/built-in-profiles/liangning/hard-signals.md",
+        "references/built-in-profiles/liangning/acceptance-checklist.md"
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "还是按梁宁风格来写，但这次主题是‘抖音口播账号前 3 秒怎么拍才更容易破播放’。",
+      "expected_output": "识别该主题超出梁宁原生议题带宽，明确提醒并自动降级到强文章模式，不继续输出伪拟态稿。",
+      "files": ["references/built-in-profiles/liangning/topic-bandwidth.md"]
+    },
+    {
+      "id": 14,
+      "prompt": "按薛辉的方向帮我写一篇文章，主题是‘为什么很多人做公众号内容获客，明明很努力，最后却只有阅读量没有成交’。我想要的是高拟态，不是普通自媒体教程。",
+      "expected_output": "进入薛辉高拟态模式，正文应体现先问变现再谈流量、失败现场+误判拆解、数据归因和处方式收束；并把短视频逻辑自然翻译到公众号内容获客场景。",
+      "files": [
+        "references/built-in-profiles/xuehui/profile-card.md",
+        "references/built-in-profiles/xuehui/worldview.md",
+        "references/built-in-profiles/xuehui/recurring-moves.md",
+        "references/built-in-profiles/xuehui/hard-signals.md",
+        "references/built-in-profiles/xuehui/acceptance-checklist.md"
+      ]
+    },
+    {
+      "id": 15,
+      "prompt": "还是按薛辉风格来写，但这次主题是‘中国半导体先进封装供应链的良率提升与工艺参数优化’。",
+      "expected_output": "识别该主题超出薛辉原生议题带宽，明确提醒并自动降级到强文章模式，不继续输出伪拟态稿。",
+      "files": ["references/built-in-profiles/xuehui/topic-bandwidth.md"]
+    }
+  ]
+}
