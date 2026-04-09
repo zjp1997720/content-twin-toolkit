@@ -105,6 +105,12 @@
 - `web-clipper`：先把网页文章、归档页、索引页抓下来
 - `content-goldmine-gemini`：再把文章拆成可复用素材
 
+这里有一个你需要提前知道的点：
+
+- `web-clipper` 不要求你额外登录 Gemini
+- `content-goldmine-gemini` **依赖本地 Gemini CLI**
+- 所以如果你要走完整维护链，除了安装 skill 目录本身，你还要确保本机已经**安装并登录 Gemini CLI**
+
 完整维护链可以理解成：
 
 ```text
@@ -117,6 +123,51 @@ web-clipper
 普通用户不一定需要这两条前置工具。
 
 维护者需要。
+
+### 5. 维护者额外前提：Gemini CLI
+
+如果你要用 `content-goldmine-gemini`，只把 skill 文件复制到工作区还不够。
+
+你还需要满足这两个条件：
+
+1. 你的电脑本地已经装了 `gemini` 命令
+2. 你已经完成过一次 Gemini CLI 登录授权
+
+最简单的判断方式：
+
+```bash
+gemini
+```
+
+如果这条命令根本找不到，说明你还没装。
+
+常见安装方式：
+
+```bash
+brew install gemini-cli
+```
+
+或者：
+
+```bash
+npm install -g @google/gemini-cli
+```
+
+装完以后，再执行一次：
+
+```bash
+gemini
+```
+
+然后按提示完成登录。
+
+如果你不用 Google 登录，也可以走 API Key 路线。
+
+更细的第一次使用说明，仓库里已经有：
+
+- `/.claude/skills/content-goldmine-gemini/README-学员分发包.md`
+
+如果你只是普通用户，只用 `writing-clone-starter` 写文章，这一段通常不用管。
 
 ---
 
@@ -231,6 +282,11 @@ web-clipper
 .claude/skills/web-clipper/
 ```
 
+并且要记住：
+
+- `content-goldmine-gemini` 不是“复制完目录就立刻能跑”
+- 它还需要本地 `Gemini CLI + 登录状态`
+
 ---
 
 ## 安装方式 A：自己手动安装
@@ -296,6 +352,10 @@ git clone https://github.com/zjp1997720/writing-clone-starter.git
 
 - `/.claude/skills/content-goldmine-gemini/SKILL.md`
 - `/.claude/skills/web-clipper/SKILL.md`
+
+如果你准备真的跑 `content-goldmine-gemini`，再看这份：
+
+- `/.claude/skills/content-goldmine-gemini/README-学员分发包.md`
 
 ### 第 5 步：做一次真正的试用
 
@@ -408,6 +468,12 @@ git clone https://github.com/zjp1997720/writing-clone-starter.git
 ```
 
 对应工具：`content-goldmine-gemini`
+
+这里要额外提醒一次：
+
+- 这一步依赖本地 Gemini CLI
+- 第一次真正开跑前，最好先执行一次 `gemini`
+- 如果还没登录，它会卡在授权阶段，而不是卡在 skill 逻辑本身
 
 ### 3. Distill 一个新的 profile
 

@@ -92,11 +92,17 @@ https://github.com/zjp1997720/writing-clone-starter
    - 默认不要覆盖未知文件
    - 优先保留我现有工作区里不属于这个仓库的内容
 6. 安装完成后，请检查：
-   - `.claude/skills/writing-clone-starter/SKILL.md`
-   - `.claude/skills/content-goldmine-gemini/SKILL.md`
-   - `.claude/skills/web-clipper/SKILL.md`
-   - `02_素材库/writing-clone-starter-material-library/README.md`
-7. 最后告诉我：
+    - `.claude/skills/writing-clone-starter/SKILL.md`
+    - `.claude/skills/content-goldmine-gemini/SKILL.md`
+    - `.claude/skills/web-clipper/SKILL.md`
+    - `02_素材库/writing-clone-starter-material-library/README.md`
+7. 安装完成后，再额外检查维护链前置依赖：
+   - 本机是否存在 `gemini` 命令
+   - 如果存在，是否已经完成登录授权
+   - 如果未安装，请告诉我推荐安装方式（Homebrew 或 npm）
+   - 如果未登录，请明确提示我先运行 `gemini` 完成登录
+   - 如果需要更详细说明，请引导我查看 `/.claude/skills/content-goldmine-gemini/README-学员分发包.md`
+8. 最后告诉我：
    - 你实际安装到了哪些路径
    - 是否发现冲突
    - 如果我要继续做 profile 蒸馏和验证，建议我先从哪一步开始
