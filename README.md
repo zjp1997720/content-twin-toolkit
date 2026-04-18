@@ -228,7 +228,7 @@ git clone https://github.com/zjp1997720/content-twin-toolkit.git
 
 ---
 
-## 欢迎关注我的公众号：智见 AI
+## 欢迎关注我的公众号：智见AI
 
 如果你对这些方向感兴趣：
 
@@ -239,7 +239,7 @@ git clone https://github.com/zjp1997720/content-twin-toolkit.git
 - 写作分身
 - 自媒体与 AI 的真实结合方式
 
-欢迎关注我的公众号 **「智见 AI」**。
+欢迎关注我的公众号 **「智见AI」**。
 
 我会持续分享：
 
@@ -247,7 +247,7 @@ git clone https://github.com/zjp1997720/content-twin-toolkit.git
 - 我怎么优化自己的内容系统和分身系统
 - 我在一线跑出来的经验、踩坑和判断
 
-![智见 AI 公众号二维码](assets/zhijian-ai-wechat-card.png)
+![智见AI 公众号二维码](assets/zhijian-ai-wechat-card.png)
 
 ---
 
