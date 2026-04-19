@@ -78,6 +78,23 @@ wrapper 会先调用 `scripts/bootstrap.sh`，自动做这些事：
 - 单篇：直接抓 URL
 - 批量：先让脚本尝试从索引页静态提取文章链接
 
+### 路径 A2：Metaso Reader API fallback
+
+适用：
+
+- 静态直抓失败（微信公众号、有反爬的站点等）
+- 脚本报 `article body not found`
+- 不需要额外安装，只需要配置 API Key
+
+做法：
+
+- 脚本会自动 fallback 到 Metaso Reader API
+- 需要设置环境变量 `METASO_API_KEY`
+- API 返回结构化 Markdown，包含图片链接
+- 对微信公众号、163 等反爬站点效果很好
+
+如果没有配置 `METASO_API_KEY`，这层会被跳过，继续走路径 B/C。
+
 ### 路径 B：浏览器补链路
 
 适用：
@@ -255,6 +272,14 @@ unknown-date 标题.md
 - 适合保存到 Obsidian Clippings
 
 这类站点优先用脚本批量处理；当 archive 页是懒加载时，用浏览器补 URL 收集。
+
+### 微信公众号
+
+已验证：
+
+- 静态直抓会被反爬拦截（验证页）
+- 通过 Metaso Reader API（路径 A2）可稳定抓取，返回完整 Markdown + 图片链接
+- 需要配置 `METASO_API_KEY` 环境变量
 
 ## 交付回执
 

@@ -49,7 +49,46 @@
 
 不要在子目录里随手运行命令。
 
-因为这个工具会把“你当前执行命令的目录”当成项目根目录。
+因为这个工具会把”你当前执行命令的目录”当成项目根目录。
+
+## 配置 Metaso Reader API（推荐）
+
+这个工具默认只能抓取公开网页。如果你想抓取微信公众号、163 等有反爬的站点，需要配置 Metaso Reader API：
+
+1. 去 [metaso.cn](https://metaso.cn) 注册账号，获取 API Key
+2. 设置环境变量：
+
+### macOS / Linux
+
+在你的 `~/.zshrc` 或 `~/.bashrc` 里加一行：
+
+```bash
+export METASO_API_KEY=”mk-你的API密钥”
+```
+
+加完后执行 `source ~/.zshrc` 让它生效。
+
+### Windows
+
+```powershell
+setx METASO_API_KEY “mk-你的API密钥”
+```
+
+### Claude Code 项目级配置
+
+如果你用 Claude Code，也可以在项目的 `.claude/settings.json` 里配置：
+
+```json
+{
+  “env”: {
+    “METASO_API_KEY”: “mk-你的API密钥”
+  }
+}
+```
+
+配置完成后，工具会在静态抓取失败时自动走 Metaso API fallback，不需要额外操作。
+
+没有配置也不影响基础功能，只是遇到反爬站点时会失败。
 
 ## 第一次使用怎么跑
 

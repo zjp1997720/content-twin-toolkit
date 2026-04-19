@@ -2,6 +2,7 @@
 import argparse
 import json
 import html
+import os
 import re
 import ssl
 import sys
@@ -14,6 +15,7 @@ from pathlib import Path
 from typing import List, Optional
 
 DEFAULT_UA = "Mozilla/5.0 OpenClaw web-clipper"
+METASO_API_URL = "https://metaso.cn/api/v1/reader"
 
 
 @dataclass
@@ -231,6 +233,28 @@ class Clipper:
                 continue
         return docs
 
+    def fetch_via_metaso(self, url: str) -> Optional[str]:
+        """Use Metaso Reader API as fallback. Returns markdown text or None."""
+        api_key = os.environ.get("METASO_API_KEY", "")
+        if not api_key:
+            return None
+        payload = json.dumps({"url": url}).encode("utf-8")
+        req = urllib.request.Request(
+            METASO_API_URL,
+            data=payload,
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Accept": "text/plain",
+                "Content-Type": "application/json",
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, context=self.ctx, timeout=self.timeout) as r:
+                return r.read().decode("utf-8", errors="ignore")
+        except Exception:
+            return None
+
     def parse_article(self, url: str, archive: Optional[str] = None) -> Article:
         html_text = self.fetch(url)
         title = self.extract_meta(html_text, prop="og:title") or self.extract_meta(html_text, name="twitter:title")
@@ -273,12 +297,23 @@ class Clipper:
             if m:
                 body_html = m.group(1)
 
-        if not body_html:
-            raise RuntimeError("article body not found")
-
-        parser = MarkdownParser()
-        parser.feed(body_html)
-        body_markdown = parser.markdown()
+        if body_html:
+            parser = MarkdownParser()
+            parser.feed(body_html)
+            body_markdown = parser.markdown()
+        else:
+            # Fallback: try Metaso Reader API
+            metaso_md = self.fetch_via_metaso(url)
+            if metaso_md and len(metaso_md.strip()) > 100:
+                body_markdown = metaso_md.strip() + "\n"
+                # Try to extract title/author from Metaso markdown if missing
+                lines = metaso_md.strip().splitlines()
+                for ln in lines[:5]:
+                    if ln.startswith("# ") and not title:
+                        title = ln[2:].strip()
+                        break
+            else:
+                raise RuntimeError("article body not found (static + Metaso both failed)")
 
         title = title or urllib.parse.urlparse(url).path.rstrip("/").split("/")[-1].replace("-", " ")
         published = published or "unknown-date"
