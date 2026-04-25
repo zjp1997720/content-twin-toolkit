@@ -21,12 +21,7 @@
    - 权重：一级主证据
    - 覆盖：价值观代际跃迁、核心方法论、语言风格、理论边界、场景模拟
 
-2. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md`
-   - 类型：已落地 consult agent 配置（含框架、风格约束、边界定义）
-   - 权重：一级辅助证据
-   - 覆盖：思维内核、诊断决策树、表达风格、擅长领域、边界约束
-
-当前数量：2（正式 build-set）
+当前数量：1（正式 build-set）
 
 目标数量：8-12
 
@@ -111,8 +106,7 @@
 ### 已有 vault 内材料
 
 1. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/project-derived/梁宁AI数字分身调研报告.md`
-2. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md`
-3. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/routing-rules.md`
+
 
 ### 调研报告中引用的外部来源（待落库）
 
@@ -140,7 +134,7 @@
 ## 当前执行约束
 
 1. 这份索引只服务 `liangning` 当前这版 `formal-profile-draft`
-2. 当前阶段不强求一手公众号正文全文，优先把调研报告和 consult agent 中已有的特征提炼干净
+2. 当前阶段不强求一手公众号正文全文，优先把调研报告中已有的特征提炼干净
 3. 扩容顺序：先补一手公众号正文抓取，再补素材库，再更新 ledger，再开 blind probe
 4. 不要只按"底层逻辑"这些标志性词汇补语料，优先补能证明：
    - 恐惧还原的诊断入口

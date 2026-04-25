@@ -1,15 +1,15 @@
 # content-twin-toolkit
 
-> 大鹏开源的 **内容系统 + 分身系统** 工具链。基于 Claude Code 生态，围绕写作分身、顾问天团、素材挖掘与 Skill 持续优化展开。
+> 大鹏开源的 **内容系统 + 分身系统** 工具链。基于 Claude Code 生态，围绕写作分身、素材挖掘与 Skill 持续优化展开。
 
 这不是一个泛泛的「Claude Code 工具箱」。
 
 这个仓库真正开源的，是我在真实工作里长期使用、长期迭代的那套系统：
 
 - **内容系统**：从素材抓取、素材拆解，到文章生成、终稿审计
-- **分身系统**：把写作能力、判断能力、顾问视角，沉淀成可复用的 skill / agent 资产
+- **分身系统**：把写作能力、内容判断和审稿机制，沉淀成可复用的 skill / agent 资产
 
-如果你也在做自己的内容系统、写作分身、顾问系统，或者正在用 Claude Code 搭自己的工作流，这个仓库会更有参考价值。
+如果你也在做自己的内容系统、写作分身，或者正在用 Claude Code 搭自己的工作流，这个仓库会更有参考价值。
 
 ---
 
@@ -48,15 +48,7 @@
 - **`web-clipper`**  
   把网页文章抓取为本地 Markdown。
 
-### 2. 顾问系统
-
-- **`consult`**
-- **`consult-team-rules`**
-- **`nuwa-consult-advisor`**
-
-这套链路用来把不同顾问视角接进判断、内容前置思考和决策过程里。
-
-### 3. Skill 优化系统
+### 2. Skill 优化系统
 
 - **`skill-optimizer`**
 
@@ -75,19 +67,8 @@
 │   │   ├── writing-gate-checker/     # 终稿前独立硬门审计
 │   │   ├── content-goldmine-gemini/  # 素材拆解与金矿沉淀
 │   │   ├── web-clipper/              # 网页抓取为本地 Markdown
-│   │   ├── consult/                  # 顾问天团主入口
-│   │   ├── consult-team-rules/       # 顾问圆桌协作规则
-│   │   ├── nuwa-consult-advisor/     # 新顾问蒸馏工具
 │   │   └── skill-optimizer/          # Skill 诊断与优化工具
 │   └── agents/
-│       ├── consult-munger.md
-│       ├── consult-jobs.md
-│       ├── consult-naval.md
-│       ├── consult-liurun.md
-│       ├── consult-liangning.md
-│       ├── consult-luozhenyu.md
-│       ├── consult-xuehui.md
-│       ├── consult-runyu.md
 │       └── writing-gate-checker.md
 ├── 02_素材库/
 ├── assets/
@@ -152,28 +133,6 @@
 - 已经有 candidate 稿
 - 准备正式产出 final
 - 想让最终稿经过独立硬门，而不是 writer 自放行
-
----
-
-## 顾问系统怎么用
-
-### 单聊
-
-```text
-/consult @芒格 这套内容产品的核心风险是什么？
-```
-
-### 并行汇总
-
-```text
-/consult @刘润 @Naval @梁宁 帮我看一下这个商业模式
-```
-
-### 圆桌讨论
-
-```text
-/consult --discuss @芒格 @乔布斯 @梁宁 关于 AI 产品到底该先做 B 端还是 C 端
-```
 
 ---
 

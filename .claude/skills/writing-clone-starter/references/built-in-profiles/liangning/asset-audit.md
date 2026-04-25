@@ -5,8 +5,6 @@
 ### 一、证据源
 
 - `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/project-derived/梁宁AI数字分身调研报告.md`（一级主证据，~15,500 字）
-- `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md`（已落地 consult agent，~230 行）
-- `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/routing-rules.md`（consult 路由定位）
 - 调研报告中引用的 9 个外部来源（待落库）
 
 ### 二、正式 profile 资产
@@ -16,7 +14,7 @@
 
 ## 当前强项
 
-1. 核心框架（痛点/爽点/痒点、点线面体、三层能力模型）已经有调研报告和 consult agent 双重验证
+1. 核心框架（痛点/爽点/痒点、点线面体、三层能力模型）已经有调研报告支撑
 2. 语言风格（生物学隐喻、地理隐喻、诊断与悲悯张力）在报告中有明确记录
 3. 边界和偏差（技术盲区、精英视角、互联网路径依赖）已有清醒认识
 4. 与其他 profile（特别是刘润）的差异化已经明确

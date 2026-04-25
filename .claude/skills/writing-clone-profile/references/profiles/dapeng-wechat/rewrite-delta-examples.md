@@ -96,8 +96,8 @@ final 倾向：
 
 来源：
 
-- `01_项目/内容创作/260416_咨询天团实战效果/03-Reviews/草稿_final.ai-baseline.md`
-- `01_项目/内容创作/260416_咨询天团实战效果/草稿_final.md`
+- `01_项目/内容创作/260416_多角色实战效果/03-Reviews/草稿_final.ai-baseline.md`
+- `01_项目/内容创作/260416_多角色实战效果/草稿_final.md`
 
 baseline 问题：
 

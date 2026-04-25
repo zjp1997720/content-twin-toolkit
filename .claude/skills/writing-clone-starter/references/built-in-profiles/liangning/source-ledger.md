@@ -8,7 +8,7 @@
 
 - 当前 formal 条目代表"第一轮已进入正式草稿资产"
 - 不代表证据已经达到最终不可推翻状态
-- 当前证据主要来自二级调研报告和已落地 consult agent，一手公众号正文语料仍在补强中
+- 当前证据主要来自二级调研报告，一手公众号正文语料仍在补强中
 - 后续如果补到更强一手正文或转录稿，允许继续收紧、降级或重写 formal 判定
 
 ## 证据透明度声明
@@ -18,8 +18,6 @@
 - 主要证据来源是 `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/project-derived/梁宁AI数字分身调研报告.md`
 - 这份报告本身是一份二级调研报告，包含了对梁宁公开内容的整理、重构和模拟
 - 其中引用了 9 个外部来源，但并非原文全文转录
-- `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md` 与该调研报告基本同源，可作为内部理解一致性的旁证，但不能视为独立一手证据
-
 因此：
 
 - 框架和方法论层面的特征（痛点/爽点/痒点、点线面体、三层能力模型）可靠性较高
@@ -39,13 +37,9 @@
 1. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/project-derived/梁宁AI数字分身调研报告.md` §3.1
    - 片段：痛点从"生存恐惧"到"替代焦虑"、爽点从"即时满足"到"掌控感"、痒点从"虚拟自我"到"创造力释放"
    - 为什么相关：直接展示了框架服务于恐惧追问的诊断逻辑
-2. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md` 框架一
-   - 片段：痛点/爽点/痒点三角的 AI 时代新内涵与诊断追问
-   - 为什么相关：落地配置中的诊断逻辑与报告一致
-
 ### 过门理由
 
-- 跨场景复现：初步通过（报告、agent、场景模拟内部一致，但主要仍属同源证据链）
+- 跨场景复现：初步通过（报告与场景模拟内部一致，但主要仍属同源证据链）
 - 生成力：通过（可用于新产品诊断的恐惧还原）
 - 排他性：通过（generic 商业导师倾向于先介绍框架，而不是先还原恐惧）
 
@@ -65,13 +59,9 @@
 1. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/project-derived/梁宁AI数字分身调研报告.md` §4.1
    - 片段：核心隐喻库（进化/基因/丛林/恐惧/连接）+ 风格迁移示例
    - 为什么相关：明确指出"拒绝机械论，拥抱生物论"是系统性的语言特征
-2. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md` 比喻偏好
-   - 片段：生物学隐喻、地理隐喻、身体隐喻三类
-   - 为什么相关：落地配置中三类隐喻被明确定义
-
 ### 过门理由
 
-- 跨场景复现：初步通过（报告与 agent 相互印证，但仍以同源证据为主）
+- 跨场景复现：初步通过（报告内部证据一致，但仍以二级调研为主）
 - 生成力：通过（可指导新文章的隐喻系统构建）
 - 排他性：通过（generic 商业导师很少如此系统性使用生物学隐喻贯穿全文）
 
@@ -91,10 +81,6 @@
 1. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/project-derived/梁宁AI数字分身调研报告.md` §3.2
    - 片段：点线面体框架的 AI 时代升维，四层结构 + 战略建议
    - 为什么相关：直接定义了层级定位的诊断逻辑
-2. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md` 框架二
-   - 片段：点线面体的 AI 时代现状与战略建议
-   - 为什么相关：落地配置中层级定位被用于诊断决策树
-
 ### 过门理由
 
 - 跨场景复现：初步通过（层级定位框架稳定，但仍待一手正文与转录稿补强）
@@ -117,13 +103,9 @@
 1. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/project-derived/梁宁AI数字分身调研报告.md` §4.3
    - 片段："虽然犀利，但结尾往往带有鼓励或对人性的理解"
    - 为什么相关：直接描述了犀利与悲悯的张力
-2. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md` 表达风格
-   - 片段："温柔但锐利""指出问题时不留情面，但结尾总带着对人性的理解和悲悯"
-   - 为什么相关：落地配置中这一张力被明确要求
-
 ### 过门理由
 
-- 跨场景复现：初步通过（风格张力清晰，但主要来自调研归纳与同源 agent）
+- 跨场景复现：初步通过（风格张力清晰，但主要来自调研归纳）
 - 生成力：通过
 - 排他性：通过（generic 商业导师往往只有犀利或只有温度，很少同时保持）
 
@@ -188,9 +170,6 @@
 
 1. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/project-derived/梁宁AI数字分身调研报告.md` §4.2, §4.3
    - 片段：空间感构建、哲学深度、追问本质
-2. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md` 回答模式
-   - 片段："收尾：哲学感收束 — 追问本质、回到人性、留下余韵"
-
 ### 过门理由
 
 - 跨场景复现：初步通过（收束方式已清晰，但需一手长文进一步验证其稳定性）
@@ -234,12 +213,9 @@
 
 1. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/project-derived/梁宁AI数字分身调研报告.md` §2.2
    - 片段：从产品经理到自由的人课程
-2. `02_素材库/writing-clone-starter-material-library/authors/liangning/evidence/consult-derived/consult-liangning.md` 世界观设定
-   - 片段：独立 IP + AI 智能体闭环交付 + 不依附组织
-
 ### 过门理由
 
-- 跨场景复现：初步通过（报告、agent 与外部来源可相互侧证，但其中 report/agent 仍属同源链条）
+- 跨场景复现：初步通过（报告与外部来源可相互侧证，但仍需一手语料补强）
 - 生成力：通过（可用于职业规划类诊断）
 - 排他性：部分通过（"超级个体"概念在 AI 圈较通用，但"自由人"的表述较独占）
 

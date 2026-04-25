@@ -12,14 +12,14 @@
 如果你第一次接触这个仓库，按下面顺序理解最快：
 
 1. **先看 `canonical/`**：这是 starter 运行时最常引用的标准素材层
-2. **再看 `evidence/`**：这是 canonical 背后的上游证据、调研稿、consult 派生材料、原始 clippings
+2. **再看 `evidence/`**：这是 canonical 背后的上游证据、调研稿、原始 clippings
 3. **需要验证时看 `validation/`**：这里放 held-out、negative、probe-evidence
 4. **最后看 `provenance/`**：这里只是历史映射账本，用来解释旧路径是怎么迁进来的，不是运行时依赖
 
 ## 结构
 
 - `authors/<author-id>/canonical/`：运行时最常引用的标准素材
-- `authors/<author-id>/evidence/`：上游证据、调研稿、consult 派生材料、原始 clippings
+- `authors/<author-id>/evidence/`：上游证据、调研稿、原始 clippings
 - `authors/<author-id>/validation/`：held-out、negative、probe-evidence
 - `authors/<author-id>/provenance/`：旧路径到新路径的迁移账本
 
@@ -45,5 +45,4 @@
 
 - `00_收件箱/`
 - `01_项目/`
-- `.claude/agents/`
 - 其他分散的全局素材路径
