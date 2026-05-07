@@ -1,0 +1,47 @@
+name: magazine-dune
+description: 杂志沙丘主题 - charcoal ink + warm dune paper
+renderer_preset: magazine-editorial
+magazine_variant: dune-gallery
+top_label: "GALLERY"
+font_family_cn: "'Avenir Next','Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif"
+font_family_en: "'Didot','Bodoni 72','Playfair Display','Source Serif 4',Georgia,serif"
+font_size: 16
+line_height: 1.75
+accent_color: "#1f1a14"
+accent_secondary: "#8b8680"
+background_color: "#f0e6d2"
+surface_color: "#fbf2e1"
+text_color: "#1f1a14"
+secondary_color: "#5e5345"
+tertiary_color: "#8a7e6a"
+heading_font: "'Didot','Bodoni 72','Noto Serif SC','Source Han Serif SC','Songti SC','STSong',Georgia,serif"
+ui_font: "'Avenir Next','Inter','IBM Plex Mono','JetBrains Mono','SF Mono',Menlo,Consolas,sans-serif"
+code_font: "'IBM Plex Mono','JetBrains Mono','SF Mono',Menlo,Consolas,'Noto Serif SC',monospace"
+code_bg: "#e3d7bf"
+code_color: "#2d2620"
+quote_border: "#1f1a14"
+quote_bg: "#fbf2e1"
+divider_color: "#d9cbb1"
+border_color: "#e0d2b8"
+tag_bg: "#e3d7bf"
+max_width: 600
+type_scale:
+  h1: 34
+  h2: 24
+  h3: 17
+  body: 15
+  caption: 12
+  code: 13
+rhythm:
+  body_line_height: 1.72
+  heading_line_height: 1.18
+  paragraph_margin: 20
+  section_padding_first: 24
+  section_padding: 38
+  list_item_margin: 9
+block_style:
+  heading_style: gallery
+  quote_style: gallery-quote
+  list_style: gallery
+  code_style: minimal-archive
+  image_style: gallery-frame

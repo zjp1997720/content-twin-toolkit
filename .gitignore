@@ -1,3 +1,7 @@
 .DS_Store
 __pycache__/
 *.pyc
+.claude/skills/wechat-styler/node_modules/
+.claude/skills/wechat-styler/preview.html
+.claude/skills/wechat-styler/_preview_frames/
+.claude/skills/wechat-styler/_preview_magazine/

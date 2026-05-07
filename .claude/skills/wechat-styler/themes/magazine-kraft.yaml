@@ -1,0 +1,47 @@
+name: magazine-kraft
+description: 杂志牛皮纸主题 - warm kraft paper + deep brown ink
+renderer_preset: magazine-editorial
+magazine_variant: kraft-archive
+top_label: "ARCHIVE"
+font_family_cn: "'Songti SC','STSong','Noto Serif SC','Source Han Serif SC',Georgia,serif"
+font_family_en: "'Georgia','Source Serif 4','Times New Roman',serif"
+font_size: 16
+line_height: 1.75
+accent_color: "#2a1e13"
+accent_secondary: "#66513d"
+background_color: "#eedfc7"
+surface_color: "#f8ecd8"
+text_color: "#2a1e13"
+secondary_color: "#66513d"
+tertiary_color: "#947f65"
+heading_font: "'STSong','Songti SC','Noto Serif SC','Source Han Serif SC',Georgia,serif"
+ui_font: "'IBM Plex Mono','JetBrains Mono','SF Mono',Menlo,Consolas,monospace"
+code_font: "'IBM Plex Mono','JetBrains Mono','SF Mono',Menlo,Consolas,'Noto Serif SC',monospace"
+code_bg: "#e0d0b6"
+code_color: "#3a2a1d"
+quote_border: "#2a1e13"
+quote_bg: "#f8ecd8"
+divider_color: "#d7c3a3"
+border_color: "#dfcdae"
+tag_bg: "#e0d0b6"
+max_width: 600
+type_scale:
+  h1: 30
+  h2: 22
+  h3: 17
+  body: 16
+  caption: 12
+  code: 13
+rhythm:
+  body_line_height: 1.88
+  heading_line_height: 1.28
+  paragraph_margin: 19
+  section_padding_first: 24
+  section_padding: 38
+  list_item_margin: 10
+block_style:
+  heading_style: archive-label
+  quote_style: archival-excerpt
+  list_style: archive
+  code_style: archive-box
+  image_style: archival-frame

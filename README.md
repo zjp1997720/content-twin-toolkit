@@ -48,7 +48,16 @@
 - **`web-clipper`**  
   把网页文章抓取为本地 Markdown。
 
-### 2. Skill 优化系统
+- **`wechat-styler`**  
+  把 Markdown 文章转换成微信公众号可直接复制使用的内联样式 HTML，内置 kami 和 magazine 系列等多套主题。
+
+### 2. 调研系统
+
+- **`deep-research`**
+
+它是一套带计划、证据采集、引用核查、对抗审查和 provenance 的深度调研流水线。目标不是“搜几条结果”，目标是把陌生问题做成可追溯、可复核、可继续迭代的研究产物。
+
+### 3. Skill 优化系统
 
 - **`skill-optimizer`**
 
@@ -67,6 +76,8 @@
 │   │   ├── writing-gate-checker/     # 终稿前独立硬门审计
 │   │   ├── content-goldmine-gemini/  # 素材拆解与金矿沉淀
 │   │   ├── web-clipper/              # 网页抓取为本地 Markdown
+│   │   ├── wechat-styler/            # Markdown 转公众号 HTML 排版工具
+│   │   ├── deep-research/            # 带引用与 provenance 的深度调研流水线
 │   │   └── skill-optimizer/          # Skill 诊断与优化工具
 │   └── agents/
 │       └── writing-gate-checker.md
@@ -155,6 +166,7 @@ git clone https://github.com/zjp1997720/content-twin-toolkit.git
 ## 使用前提
 
 - 需要 [Claude Code](https://claude.ai/code) 或兼容的 Agent 运行时
+- `wechat-styler` 依赖 Node.js 18+
 - `content-goldmine-gemini` 依赖本地 Gemini CLI
 - `writing-clone-profile` 推荐配合 `nmem` / Obsidian CLI / 本地素材库一起使用
 
